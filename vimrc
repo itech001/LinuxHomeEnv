@@ -90,7 +90,6 @@ set incsearch
 
 "设定文件浏览器目录为当前目录
 set bsdir=buffer
-set autochdir
 
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
@@ -113,9 +112,6 @@ set formatoptions=tcrqn
 "set list
 "set listchars=tab:>-,trail:-
 
-"启用折叠
-set nofen
-set fdl=0
 
 
 "---------------------------------------
