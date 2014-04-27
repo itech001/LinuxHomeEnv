@@ -1,0 +1,14 @@
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+[user]                                                                                                                                                                                                                                       
+    name = itech001
+    email = itech001@126.com
+[remote "origin"]
+    url = git@github.com:itech001/MyWorkEnv.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
