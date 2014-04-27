@@ -28,11 +28,11 @@ set showmatch
 set nocompatible
  
 "设置缩进,用4空格代替tab
-set tabstop=4
+set smartindent  
+set tabstop=4  
+set shiftwidth=4  
+set expandtab  
 set softtabstop=4
-set shiftwidth=4
-"set autoindent
-"set cindent
 if &term=="xterm"
     set t_Co=8
     set t_Sb=^[[4%dm
