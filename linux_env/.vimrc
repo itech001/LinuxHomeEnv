@@ -28,10 +28,10 @@ set showmatch
 set nocompatible
  
 "设置缩进,用4空格代替tab
-set smartindent  
+"set smartindent  
 set tabstop=4  
 set shiftwidth=4  
-set expandtab  
+"set expandtab  
 set softtabstop=4
 if &term=="xterm"
     set t_Co=8
