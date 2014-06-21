@@ -1,11 +1,12 @@
 
-[markdown syntax cn](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown)
+[markdown syntax cn](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown)  
 [markdown syntax english](https://github.com/rhiokim/haroopad/blob/develop/Syntax.md)
 
 ![](https://raw.githubusercontent.com/itech001/MyWorkEnv/master/markdown/markdown_syntax.png)
 
-来自：https://www.zybuluo.com/static/editor/md-help.markdown
-# Cmd Markdown 简明语法手册
+来自：https://www.zybuluo.com/static/editor/md-help.markdown  
+
+## Cmd Markdown 简明语法手册
 
 标签： Cmd-Markdown
 
