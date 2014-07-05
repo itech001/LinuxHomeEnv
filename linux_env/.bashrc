@@ -37,3 +37,11 @@ alias tf='tail -f'
 alias cls='clear'
 alias du0='du --max-depth=0'
 alias du1='du --max-depth=1'
+
+function lt() { ls -ltrsa "$@" | tail; }
+function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
+function fname() { find . -iname "*$@*"; }
+function remove_lines_from() { grep -F -x -v -f $2 $1; } # removes lines from $1 if they appear in $2
+alias pp="ps axuf | pager"
+ alias sum="xargs | tr ' ' '+' | bc" ## Usage: echo 1 2 3 | sum
+function mcd() { mkdir $1 && cd $1; }
