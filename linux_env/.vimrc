@@ -1,3 +1,69 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+"Plugin 'user/L9', {'name': 'newL9'}
+
+"my plugins 
+
+Bundle 'SuperTab'
+Bundle 'scrooloose/syntastic'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'scrooloose/nerdcommenter'
+"SnipMate -below four items
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+Bundle 'scrooloose/nerdtree'
+Bundle 'minibufexpl.vim'
+
+"easytags -below two items
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'vim-scripts/gdbmgr'
+Bundle 'vim-scripts/winmanager'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"end of Bundle
+
 "设置编码
 set encoding=utf-8
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
@@ -11,7 +77,8 @@ syntax enable
 syntax on
  
 "设置配色方案
-colorscheme torte
+"colorscheme torte
+colorscheme desert
  
 "可以在buffer的任何地方使用鼠标
 "set mouse=a
@@ -19,7 +86,7 @@ colorscheme torte
 "set selectmode=mouse,key
 
 "使用鼠标复制内容到剪贴板
-"set  mouse=v
+set  mouse=v
  
 "高亮显示匹配的括号
 set showmatch
@@ -29,10 +96,13 @@ set nocompatible
  
 "设置缩进,用4空格代替tab
 "set smartindent  
-set tabstop=4  
-set shiftwidth=4  
-"set expandtab  
-set softtabstop=4
+set expandtab  
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set autoindent
+set cindent
+"set softtabstop=4
 if &term=="xterm"
     set t_Co=8
     set t_Sb=^[[4%dm
@@ -52,7 +122,7 @@ set completeopt=longest,menu "关掉智能补全时的预览窗口
 set shell=bash
  
 "设置VIM记录的历史数
-set history=400
+set history=1000
  
 
 "设置当文件被外部改变的时侯自动读入文件
@@ -112,7 +182,17 @@ set formatoptions=tcrqn
 "set list
 "set listchars=tab:>-,trail:-
 
+set number
+set showmode
+set scrolloff=3
+set shortmess=atI
+set background=dark
+set cursorline
+set cursorcolumn
 
+"configure backspace to be able to across two lines
+set backspace=2
+set whichwrap+=<,>,h,l
 
 "---------------------------------------
 "自动补全
