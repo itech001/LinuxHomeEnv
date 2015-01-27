@@ -1,5 +1,5 @@
 
-###install pip
+##install pip
 * python distribute_setup.py
 * python get-pip.py
 
